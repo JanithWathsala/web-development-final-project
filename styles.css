@@ -35,7 +35,7 @@ nav ul li a {
 
 .banner {
     height: 100vh;
-    background: url('path_to_your_image.jpg') no-repeat center center/cover;
+    background: url('./image/distinationHome.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
