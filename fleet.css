@@ -87,4 +87,30 @@ body, html {
     font-family: poppins;
     font-size: 80px;
     margin: 0;
+} .heading h2{
+    font-family: poppins;
+}
+
+
+
+.popularFleet{
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+}
+.popularFleet h2{
+    font-family: poppins;
+    font-size: 50px;
+    color: aliceblue;
+    padding-left: 1rem;
+    margin-top: 0%;
+}
+.popularFleet lf img{
+    width: 20px;
+    height: auto;
+}
+.popularFleet rig img{
+    padding: 50px;
+    width: 20px;
+    height: auto;
 }
