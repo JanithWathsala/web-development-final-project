@@ -79,7 +79,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 50rem;
 }
@@ -87,4 +87,39 @@ body, html {
     font-family: poppins;
     font-size: 80px;
     margin: 0;
+} .heading h2{
+    font-family: poppins;
+}
+
+
+
+.popularFleet{
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+}
+.popularFleet h2{
+    font-family: poppins;
+    font-size: 50px;
+    color: aliceblue;
+    padding-left: 1rem;
+    margin-top: 0%;
+}
+
+.popularFleet img{
+    width: 720px;
+    padding: 8px;
+    margin: 0;
+}
+.image-row{
+    display: flex;
+    justify-content: center;
+}
+.image-com{
+    flex: 1;
+    padding: 10px;
+}
+.image-com img{
+    width: 100px;
+    height: auto;
 }
