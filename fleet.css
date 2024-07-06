@@ -79,7 +79,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 50rem;
 }
@@ -105,12 +105,21 @@ body, html {
     padding-left: 1rem;
     margin-top: 0%;
 }
-.popularFleet lf img{
-    width: 20px;
-    height: auto;
+
+.popularFleet img{
+    width: 720px;
+    padding: 8px;
+    margin: 0;
 }
-.popularFleet rig img{
-    padding: 50px;
-    width: 20px;
+.image-row{
+    display: flex;
+    justify-content: center;
+}
+.image-com{
+    flex: 1;
+    padding: 10px;
+}
+.image-com img{
+    width: 100px;
     height: auto;
 }
