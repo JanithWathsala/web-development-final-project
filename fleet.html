@@ -29,23 +29,59 @@
     </section>
     <section class="popularFleet">
         <h2>Popular Fleet</h2>
-        <div class="image-row">
-            <div class="img-com">
-                <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" alt="">
+        <div class="pf-grid">
+            <div class="pf-left">
+                <div class="img-com">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details1')">Details</button>
+                    <div class="details-popup" id="details1">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details1')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-com">
+                    <img src="./image/fleet/space-perspective-capsule.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details2')">Details</button>
+                    <div class="details-popup" id="details2">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details2')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img-com">
-                <img src="./image/fleet/space-perspective-capsule.jpg" alt="">
-            </div>
+            <div class="pf-right"> 
+                <div class="img-com">
+                    <img src="./image/fleet/intro-1652052721.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details3')">Details</button>
+                    <div class="details-popup" id="details3">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details3')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-com">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details4')">Details</button>
+                    <div class="details-popup" id="details4">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details4')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>    
         </div>
-        <div class="image-row"> 
-            <div class="img-com">
-                <img src="./image/fleet/intro-1652052721.jpg" alt="">
-            </div>
-            <div class="img-com">
-                <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" alt="">
-            </div> 
-        </div>
-             
+        
     </section>
+
+    <script src="./fleet.js"></script>
 </body>
 </html>
