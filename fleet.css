@@ -87,9 +87,7 @@ body, html {
     font-family: poppins;
     font-size: 80px;
     margin: 0;
-} .heading h2{
-    font-family: poppins;
-}
+} 
 
 
 
@@ -178,4 +176,57 @@ body, html {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+
+.fleet-moreTOexplore{
+    background-color: #000;
+}
+.fleet-moreTOexplore h2{
+    font-family: poppins;
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-images img {
+    width: 25%; /* Shows 4 images at a time */
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
 }
