@@ -104,6 +104,7 @@ body, html {
     color: aliceblue;
     padding-left: 1rem;
     margin-top: 0%;
+    margin-bottom: 0;
 }
 
 .popularFleet img{
@@ -111,15 +112,70 @@ body, html {
     padding: 8px;
     margin: 0;
 }
-.image-row{
+.pf-grid{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
-.image-com{
-    flex: 1;
-    padding: 10px;
+
+.pf-left, .pf-right {
+    display: flex;
+    flex-direction: column;
 }
-.image-com img{
-    width: 100px;
+
+.img-com {
+    position: relative;
+}
+
+.img-com img {
     height: auto;
+    border-radius: 10px;
+}
+
+.details-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.details-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+.details-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+.popup-content {
+    position: relative;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
