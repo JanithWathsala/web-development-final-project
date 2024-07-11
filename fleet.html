@@ -4,10 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./fleet.css">
 </head>
 <body>
-    <h1>hellow world</h1>
-    <h2>sachintha</h2>
-    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    <section class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="./video/fleet/Gen-2 972897541, fly the rocket, blue-origin-space-to, M 7.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book a flight</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Fleet</a></li>                    
+                </ul>
+            </div>
+            <div class="heading">
+                <h1>Select Your Flight <br>
+                    Now</h1>
+                <h2>Choose your rocket quickly to get a unique difference</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="popularFleet">
+        <h2>Popular Fleet</h2>
+        <div class="pf-grid">
+            <div class="pf-left">
+                <div class="img-com">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details1')">Details</button>
+                    <div class="details-popup" id="details1">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details1')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-com">
+                    <img src="./image/fleet/space-perspective-capsule.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details2')">Details</button>
+                    <div class="details-popup" id="details2">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details2')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pf-right"> 
+                <div class="img-com">
+                    <img src="./image/fleet/intro-1652052721.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details3')">Details</button>
+                    <div class="details-popup" id="details3">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details3')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-com">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" alt="">
+                    <button class="details-button" onclick="showDetails('details4')">Details</button>
+                    <div class="details-popup" id="details4">
+                        <div class="popup-content">
+                            <span class="close-button" onclick="hideDetails('details4')">&times;</span>
+                            <h3>Details for Image 2</h3>
+                            <p>This is a description for Image 2.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>    
+        </div>
+        
+    </section>
+
+    <section class="fleet-moreTOexplore">
+        <h2>More TO Explore</h2>
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="./image/fleet/space-perspective-capsule.jpg" alt="Image 1">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" alt="Image 2">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" alt="Image 1">
+                    <img src="./image/fleet/space-perspective-capsule.jpg" alt="Image 2">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" alt="Image 2">
+                    <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" alt="Image 1">
+                    <img src="./image/fleet/space-perspective-capsule.jpg" alt="Image 2">
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="./fleet.js"></script>
 </body>
 </html>
