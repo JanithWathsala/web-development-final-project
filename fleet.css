@@ -126,7 +126,7 @@ body, html {
 
 .img-com img {
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .details-button {
@@ -140,6 +140,7 @@ body, html {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 30px;
+    font-family: poppins;
     font-size: 14px;
     margin-bottom: 1rem;
 }
@@ -160,9 +161,10 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px;
+    font-family: poppins;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000; /* Ensure it appears above other elements */
@@ -179,6 +181,9 @@ body, html {
 }
 
 
+
+
+
 .fleet-moreTOexplore{
     background-color: #000;
 }
@@ -186,6 +191,7 @@ body, html {
     font-family: poppins;
     font-size: 50px;
     margin: 0;
+    padding-left: 1rem;
     color: white;
 }
 
@@ -208,7 +214,7 @@ body, html {
 }
 
 .carousel-images img {
-    width: 25%; /* Shows 4 images at a time */
+    width: 25%;
     flex-shrink: 0;
 }
 
