@@ -1,4 +1,3 @@
-// script.js
 function showDetails(id) {
     document.getElementById(id).style.display = 'block';
 }
@@ -42,7 +41,7 @@ function moveCarousel(direction) {
     }, 0);
 }
 
-// Initial setup to show the first four images
 window.onload = () => {
     moveCarousel(0);
 }
+
