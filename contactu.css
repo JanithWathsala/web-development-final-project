@@ -89,7 +89,7 @@ form {
 label {
   margin-bottom: 5px;
   font-size: 19px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -99,7 +99,7 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 16px;
   font-size: 16px;
-  background-color: rgba(161, 180, 185, 0.7);
+  background-color: rgba(94, 103, 106, 0.7);
   color: #d7dfe4;
 }
 
@@ -130,6 +130,10 @@ button:hover {
   position: relative;
   background-color: rgba(0, 0, 0, 0.414);
   border-radius: 50px;
+}
+.right-column:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .right-column h2 {
@@ -174,6 +178,13 @@ button:hover {
 .right-column > * {
   margin-bottom: 15px;
 }
+
+
+
+
+
+
+
 
 .social-media-links {
   margin-top: 20px;

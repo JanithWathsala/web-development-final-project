@@ -261,32 +261,25 @@ body, html {
 
 
 
-
-
+/*fleet-section*/
 .fleet-body {
     background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     color: white;
     flex-direction: column;
     text-align: center;
     align-items: center; 
 }
-
-.container5 {
-    gap: 1rem;
-    text-align: center;
-}
-
-.title {
+.fleet-title {
     text-align: center;
     align-items: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 5rem;
     padding-top: 3rem;
 }
 
@@ -296,7 +289,7 @@ body, html {
     gap: 5px;
 }
 
-.fleet-card {
+.fleet-box {
     padding-left: 3rem;
     align-items: center;
     text-align: center;
@@ -316,7 +309,7 @@ body, html {
     flex-direction: column;
 }
 
-.fleet-card .overlay {
+.fleet-box .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -327,7 +320,7 @@ body, html {
     z-index: 1;
 }
 
-.fleet-card h2, .fleet-card p {
+.fleet-box h2, .fleet-box p {
     position: relative;
     z-index: 2;
     margin: 0;
@@ -349,11 +342,29 @@ body, html {
 .details-btn:hover {
     background-color: #ff6347;
 }
-.fleet-card:hover {
+.fleet-box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+
+  /* Menu Section */
+.fleet-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+@media only screen and (max-width: 996px) {
+    .fleet-center {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .fleet-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 

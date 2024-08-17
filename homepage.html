@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./homepage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <!--navigation-->
@@ -91,49 +92,47 @@
 
 <!--fleet-->
 <div class="fleet-body">
-    <div class="container5">
-        <h1 class="title">Fleet Overview</h1>
-        <div class="fleet-grid">
-            <div class="fleet-card" style="background-image: url('celestial-cruiser.jpg');">
-                <div class="overlay"></div>
-                <h2>Celestial Cruiser</h2>
-                <p>(Model: Astra-1)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-            <div class="fleet-card" style="background-image: url('nebula-navigator.jpg');">
-                <div class="overlay"></div>
-                <h2>Nebula Navigator</h2>
-                <p>(Model: Noa-7)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-            <div class="fleet-card" style="background-image: url('galactic-voyager.jpg');">
-                <div class="overlay"></div>
-                <h2>Galactic Voyager</h2>
-                <p>(Model: Orion-X2)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-            <div class="fleet-card" style="background-image: url('stellar-pioneer.jpg');">
-                <div class="overlay"></div>
-                <h2>Stellar Pioneer</h2>
-                <p>(Model: Pulsar-5)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-            <div class="fleet-card" style="background-image: url('cosmic-explorer.jpg');">
-                <div class="overlay"></div>
-                <h2>Cosmic Explorer</h2>
-                <p>(Model: Vega-9)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-            <div class="fleet-card" style="background-image: url('quantum-quest.jpg');">
-                <div class="overlay"></div>
-                <h2>Quantum Quest</h2>
-                <p>(Model: Quasar-3)</p>
-                <button class="details-btn">More Details</button>
-            </div>
-        </div>
-    </div>
+    <h1 class="fleet-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">Fleet Overview</h1>
+        <div class="container fleet-center">  
+          <div class="fleet-box" data-aos="fade-right" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+          <div class="fleet-box" data-aos="fade-down" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+          <div class="fleet-box" data-aos="fade-left" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+          <div class="fleet-box" data-aos="fade-right" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+          <div class="fleet-box" data-aos="fade-up" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+          <div class="fleet-box" data-aos="fade-left" data-aos-duration="2000" style="background-image: url('./images/pp2.jpg');">
+            <div class="overlay"></div>
+            <h2>Galactic Voyager</h2>
+            <p>(Model: Orion-X2)</p>
+            <button class="details-btn">More Details</button>
+          </div>
+        </div>         
+    </div>    
 </div>
-
 
 
 
@@ -257,7 +256,10 @@
 
 
 <script src="./homepage.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
