@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.destinations-section {
+    background: url('./image/distinationHome.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.place-section {
+    background-color: #0f161b;
+    padding: 80px 0;
+}
+
+header {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.logo {
+    height: 70px;
+    margin-right: auto; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    max-width: 800px;
+    width: 70%;
+}
+
+.header-content h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 80px; 
+    margin: 0;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 15px;
+    width: 70%;
+    overflow: hidden;
+    text-align: left;
+    margin: 40px auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.left-card img,
+.right-card img {
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.left-card .content,
+.right-card .content {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-card .content {
+    text-align: right;
+}
+
+.right-card .content {
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.distance {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove excess br tags by adding spacing via margin-bottom */
+.card + .card {
+    margin-top: 40px;
+}
+
+/* Social Media Links */
+.social-media-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media-links h3 {
+    font-family: 'Archivo Black', Arial, sans-serif;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.social-media-links a {
+    margin: 0 50px;
+    display: inline-block;
+}
+
+.social-media-links img {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px; /* Adjust the size of the icons */
+    filter: brightness(0) invert(1); /* Make icons white; adjust as needed */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-media-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+    filter: brightness(1) invert(0); /* Invert the color on hover; adjust as needed */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: #000000;
+    color: white;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+footer .footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+footer .footer-section h2 {
+    font-family: 'Archivo Black', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+footer .footer-section a:hover {
+    color: red;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+footer .footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .footer-bottom a:hover {
+    color: red;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+footer form label.consent {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer form label.consent input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+footer form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+}
+
+footer form button[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: red;
+}
