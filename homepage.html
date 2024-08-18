@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./homepage.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./all.css">
+     <!-- ======== Boxicons ======= -->
+     <link
+     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+   <!-- ======== Slider Js ======= -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+   />
+
 </head>
 <body>
     <!--navigation-->
@@ -26,9 +37,7 @@
                 </ul>
             </div>
             <div class="heading">
-                <h1>ASTRAL <br>
-                    FLIGHTS
-                    </h1>
+                <h1>ASTRAL FLIGHTS</h1>
                 <h2>Choose your rocket quickly to get a unique difference</h2>
                 <p>Astral  Flights is your gateway to luxurious and unforgettable starship journeys. 
                     Discover breathtaking interstellar destinations and experience unparalleled comfort 
@@ -39,7 +48,7 @@
 
 
 
-
+<!--shuttles-->
     <div class="background-example">
         <h1 class="title-key">Key Features</h1>
         <div class="features-grid">
@@ -67,24 +76,50 @@
 
 
  <!--carosal-->
- <section class="fleet-moreTOexplore">
-        <h1>POPULAR DESTINATION</h1>
-        <div class="carousel">
-            <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
-            <div class="carousel-container">
-                <div class="carousel-images">
-                    <img src="./images/pp1.jpg" alt="Image 1">
-                    <img src="./images/pp2.jpg" alt="Image 2">
-                    <img src="./images/pp3.jpg" alt="Image 1">
-                    <img src="./images/pp4.jpg" alt="Image 2">
-                    <img src="./images/pp6.jpg" alt="Image 2">
-                    <img src="./images/pp7.jpg" alt="Image 2">
-                    <img src="./images/pp5.jpg" alt="Image 1">      
-                </div>
+ <div class="fleet-moreTOexplore">
+    <div data-aos="fade-right" data-aos-duration="1500">
+        <h1>Destination</h1>
+        <p>These detailed descriptions highlight the unique features, capabilities, and luxurious<br> amenities of each starship model in your fleet, appealing to clients seeking <br>unparalleled experiences in space travel.</p>
+    </div>
+    <section class="section trip" id="trips">
+        <div class="row container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="swiper-container slider-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/pp1.jpg" alt="hero image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp7.jpg" alt="" />
+              </div>
             </div>
-            <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+          </div>
+          <div class="custom-next d-flex">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="custom-prev d-flex">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+          <div class="custom-pagination d-flex"></div>
         </div>
- </section>
+      </section>
+ </div>
+ 
+
 
 
 
@@ -147,26 +182,26 @@
         <div class="offers">
             <div class="offer" data-aos="fade-down" data-aos-duration="2000">
                 <div class="tag">SPECIAL OFFER</div>
-                <img src="./images/galactic_getway.jpg" alt="Galactic Getaway">
-                <p><strong>Enjoy a 20% discount on our premium Galactic Getaway package.</strong> Experience the cosmos like never before</p>
+                <img src="./images/1.jpg" alt="Galactic Getaway">
+                <p><strong>Enjoy a 20% discount on our premium Galactic Getaway package.</strong><br> Experience the cosmos like never before</p>
                 <button>LEARN MORE</button>
             </div>
             <div class="offer"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
                 <div class="tag">SPECIAL OFFER</div>
-                <img src="./images/photo_2024-06-30_13-46-09.jpg" alt="Family Package">
-                <p><strong>Book a family package and get free upgrades to our luxury cabins.</strong> Create unforgettable memories with your loved ones</p>
+                <img src="./images/1.jpg" alt="Family Package">
+                <p><strong>Book a family package and get free upgrades to our luxury cabins.</strong><br> Create unforgettable memories with your loved ones</p>
                 <button>LEARN MORE</button>
             </div>
             <div class="offer"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
                 <div class="tag">LIMITED OFFER</div>
-                <img src="./images/photo_2024-06-30_13-46-09.jpg" alt="Honeymoon Package">
-                <p><strong>Celebrate your love with an exclusive honeymoon package.</strong> Enjoy romantic dinners under the stars and special couple’s activities</p>
+                <img src="./images/1.jpg" alt="Honeymoon Package">
+                <p><strong>Celebrate your love with an exclusive honeymoon package.</strong><br> Enjoy romantic dinners under the stars and special couples activities</p>
                 <button>LEARN MORE</button>
             </div>
             <div class="offer"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
                 <div class="tag">LIMITED OFFER</div>
-                <img src="./images/photo_2024-06-30_13-46-09.jpg" alt="Interstellar Adventure">
-                <p><strong>Book your journey 6 months in advance and receive a 15% discount.</strong> Secure your spot on our next interstellar adventure</p>
+                <img src="./images/1.jpg" alt="Interstellar Adventure">
+                <p><strong>Book your journey 6 months in advance and receive a 15% discount.</strong><br> Secure your spot on our next interstellar adventure</p>
                 <button>LEARN MORE</button>
             </div>
         </div>
@@ -175,7 +210,7 @@
 
 
 
-
+<!--Testination-->
 <div class="testi">
     <div class="testimonials-container">
         <h1>Testimonials</h1>
@@ -214,9 +249,8 @@
 
 
 
-
+ <!--fotter-->
 <div>
-    <!--fotter-->
     <div class="social-media-links">
         <h3>Follow Us ON</h3>
         <a href="https://www.facebook.com" ><img src="/images/facebook.png" alt="Facebook"></a>
@@ -251,7 +285,7 @@
     <div class="footer-bottom">
         &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
         <br>
-        <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
+        <a href="#">Privacy Policy</a> | <a href="./Terms of use.html">Terms Of Use</a>
     </div>
 </footer>    
 
@@ -261,6 +295,7 @@
     <script>
         AOS.init();
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
 </body>
 </html>

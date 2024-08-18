@@ -31,26 +31,16 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*heading section*/
 .heading {
+    margin-top: 9rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    justify-content: center;
     padding-top: 50rem;
 }
 .heading h1{
@@ -63,6 +53,7 @@ body, html {
 }
 .heading p{
     font-family: poppins;
+    font-size: medium;
 }
 
 
@@ -72,7 +63,7 @@ body, html {
 
 
 
-
+/*key feacture section*/
 .background-example {
     background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
@@ -89,7 +80,7 @@ body, html {
 }
 
 .title-key {
-    font-size: 2.5rem;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -127,12 +118,12 @@ body, html {
 }
 
 .feature-box h2 {
-    font-size: 1rem;
+    font-size: medium;
     margin-bottom: 5px;
 }
 
 .feature-box p {
-    font-size: 1rem;
+    font-size: medium;
     line-height: 1.2;
 }
 
@@ -159,74 +150,139 @@ body, html {
 
 
 
-
+/*fleet-moreTOexplore*/
 .fleet-moreTOexplore{
     background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
-    height: 70vh;
+    height: 90vh;
+    color: white;
 }
-.fleet-moreTOexplore h1{
+.fleet-moreTOexplore h1,p{
     text-align: center;
     font-family: poppins;
     margin: 0;
     padding-left: 3rem;
     color: white;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
-
-
-.carousel {
-    position: relative;
-    width: 93%;
+.fleet-moreTOexplore h1{
+    font-size: 36px;
+}
+.fleet-moreTOexplore p{
+    font-size: 2rem;
+}
+/*carosal*/
+:root {
+    --primary: #000000;
+  }
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .d-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 4rem;
+  }
+  .container {
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+  .trip {
     overflow: hidden;
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
-    margin-left: 3rem;
-    margin-top: 3rem;
-}
-
-.carousel-container {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-images {
-    display: flex;
+  }
+  .trip .row {
+    width: 95vw;
+    position: relative;
+  }
+  
+  .trip .swiper-container {
     width: 100%;
-}
-
-.carousel-images img {
-    width: 25%;
-    flex-shrink: 0;
-}
-
-.carousel-button {
+    height: 100%;
+  }
+  
+  .trip .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+  }
+  
+  .trip .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .custom-next,
+  .custom-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    padding: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    justify-content: center;
     cursor: pointer;
-    z-index: 1;
-}
+  }
+  
+  .custom-next {
+    right: -60px;
+  }
+  .custom-prev {
+    left: -60px;
+  }
+  
+  .custom-pagination {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 7px;
+    border-radius: 5px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary);
+  }
+  
+  .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .trip .explore {
+    text-align: center;
+    margin-top: 8rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .custom-next,
+    .custom-prev {
+      top: -15%;
+      transform: translateY(0%);
+    }
+  
+    .custom-next {
+      right: 10px;
+    }
+    .custom-prev {
+      left: auto;
+      right: 70px;
+    }
+  }
+  
+  
 
-.carousel-button.prev {
-    left: 0;
-}
-
-.carousel-button.next {
-    right: 0;
-}
-.carousel img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
 
 
 
@@ -238,7 +294,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 130vh;
+    height: 110vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -248,7 +304,7 @@ body, html {
 .fleet-title {
     text-align: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 36px;
     margin-bottom: 5rem;
     padding-top: 3rem;
 }
@@ -345,7 +401,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 70vh;
+    height: 130vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -359,8 +415,8 @@ body, html {
     align-items: center;
 }
 
-h1 {
-    margin-bottom: 20px;
+.special-offer h1 {
+    margin-bottom: 9rem;
     font-size: 36px;
 }
 
@@ -369,7 +425,6 @@ h1 {
     justify-content: space-around;
     gap: 20px;
     max-width: 1200px;
-    margin-top: 4rem;
 }
 
 .offer {
@@ -432,14 +487,14 @@ button:hover {
 
 
 
-
+/*Testination*/
 .testi {
     background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     color: white;
