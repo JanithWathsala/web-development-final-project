@@ -6,32 +6,34 @@
     <title>Fly to Space</title>
     <link rel="stylesheet" href="Book a Flight.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./all.css">
 </head>
 <body>
-    <div class="container">
-        <div class="overlay">
-
-        </div>
+    <section class="video-container">
         <video autoplay muted loop id="background-video">
             <source src="./images/Rocket.mp4" type="video/mp4">
         </video>
-        
-        <nav>
-            <img src="./images/logo.png" alt="Company Logo" class="logo">
-            <ul>
-                <li><a href="./homepage.html">Home</a></li>
-                <li><a href="./Book_a_Flight.html">Book a Flight</a></li>
-                <li><a href="./destination.html">Destinations</a></li>
-                <li><a href="./fleet.html">Fleet</a></li>
-                <li><a href="#">Offers</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h1>Select Your Flight<br>
-                Now</h1>
-            <h2>Purchase a window seat on a life-changing spaceflight</h2>
+        <div class="overlay">
+            <div class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                    <li><a href="./destination.html">Destination</a></li>
+                    <li><a href="./fleet.html">Fleet</a></li>  
+                    <li><a href="#">Offers</a></li>
+
+                </ul>
+            </div>
+            <div class="heading">
+                <h1>BOOK YOUR <br>FLIGHT NOW</h1>
+                <h2>Book your rocket quickly to get a unique difference</h2>
+            </div>
         </div>
-    </div>
+    </section>
+
+
+
+    <!--form section-->
     <div class="form-section">
         <div class="form-overlay"></div>
         <div class="form-container">
@@ -113,35 +115,36 @@
         <a href="https://www.instagram.com" ><img src="/images/linkedin.png" alt="linkedin"></a>
         <a href="https://www.linkedin.com" ><img src="/images/youtube.png" alt="Youtube"></a>
     </div>
-        <!-- Footer Section -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    
-                    <a href="#">About Us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Support</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="footer-section">
-                    <h2>Subscribe</h2>
-                    <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                    <form>
-                        <input type="email" placeholder="Email" required>
-                        <label class="consent">
-                            <input type="checkbox" required>
-                            Please click to confirm your consent to receive email updates from us.
-                        </label>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">        
+                <a href="./about01.html">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Support</a>
+                <a href="./contactus.html">Contact</a>
             </div>
-            <div class="footer-bottom">
-                &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
-                <br>
-                <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
+            <div class="footer-section">
+                <h2>Subscribe</h2>
+                <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <label class="consent">
+                        <input type="checkbox" required>
+                        Please click to confirm your consent to receive email updates from us.
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-        </footer>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
+            <br>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
+        </div>
+    </footer>  
         
         
     </body>
