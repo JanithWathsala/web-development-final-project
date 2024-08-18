@@ -6,7 +6,7 @@ html,body{
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
+  font-family: poppins;
 }
 
 .video-container {
@@ -147,7 +147,7 @@ footer {
   }
   
   footer .footer-section h2 {
-    font-family: 'Archivo Black', Arial, sans-serif;
+    font-family: poppins;
     margin-bottom: 10px;
   }
   footer .footer-section a {

@@ -70,7 +70,7 @@ body, html {
     font-family: poppins;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -81,7 +81,8 @@ body, html {
 
 .title-key {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .features-grid {
@@ -439,6 +440,7 @@ body, html {
 
 .offer img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -457,7 +459,7 @@ body, html {
 }
 
 .offer p {
-    font-size: 14px;
+    font-size: medium;
     line-height: 1.5;
     margin-bottom: 15px;
 }

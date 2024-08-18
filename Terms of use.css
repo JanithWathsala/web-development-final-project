@@ -16,7 +16,6 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     z-index: -1; /* Place it behind the content */
 }
 
@@ -30,40 +29,6 @@ header {
     z-index: 1;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    height: 80px;
-    width: auto;
-}
-
-.logo img {
-    height: 100%; /* Adjust height as needed */
-    width: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 main {
     display: flex;
@@ -78,7 +43,7 @@ main {
 }
 
 h1 {
-    margin: 0;
+    margin-top: 5rem;
     text-align: center;
     font-size: 3rem;
     color: white;
@@ -86,7 +51,6 @@ h1 {
 }
 
 .terms-content {
-    
     padding: 8rem;
     border-radius: 10px;
     max-width: 800px;
@@ -117,138 +81,4 @@ h1 {
     margin-left: 1rem;
     line-height: 1.5;
 }
-
-.social-media-links {
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(255, 0, 0); /* Ensure the text color is white for visibility */
-}
-
-.social-media-links h3 {
-    font-family: 'Archivo Black', Arial, sans-serif;
-    margin-bottom: 10px;
-    color: rgb(0, 0, 0); /* Ensure the text color is white for visibility */
-}
-
-.social-media-links a {
-    margin: 0 50px;
-    display:inline-block;
-}
-
-.social-media-links img {
-    width: 40px; /* Adjust the size of the icons */
-    height: 40px; /* Adjust the size of the icons */
-    /*filter: brightness(0) invert(1); /* Make icons white; adjust as needed */
-    /*transition: transform 0.3s, filter 0.3s;*/
-}
-.social-media-links a:hover img {
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
-    filter: brightness(1) invert(0); /* Invert the color on hover; adjust as needed */
-}
-
-footer {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    background: #000000;
-    color: rgb(255, 255, 255);
-}
-
-footer .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
-
-footer .footer-section {
-    flex: 1 1 300px;
-    margin: 10px;
-
-}
-
-footer .footer-section h2 {
-    font-family: 'Archivo Black', Arial, sans-serif;
-    margin-bottom: 10px;
-}
-
-footer .footer-section a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 40px;
-    font-size: 20px;
-    font-weight: bolder;
-    
-
-}
-
-footer .footer-section a:hover {
-    color: rgb(255, 255, 255);
-   
-}
-
-footer .footer-bottom {
-    border-top: 1px solid #ffffff;
-    padding-top: 10px;
-    font-size: 14px;
-}
-
-footer .footer-bottom a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer .footer-bottom a:hover {
-    color: rgb(255, 255, 255);
-}
-
-footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer form input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 300px;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-footer form label.consent {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-footer form label.consent input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-footer form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 150px;
-}
-
-footer form button[type="submit"]:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: red;
-}
-
-
 
