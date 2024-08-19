@@ -4,6 +4,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 .video-container {
@@ -38,7 +41,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     justify-content: center;
     padding-top: 50rem;
@@ -65,7 +68,6 @@ body, html {
 
 /*key feacture section*/
 .background-example {
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     font-family: poppins;
     background-position: center;
@@ -83,6 +85,7 @@ body, html {
     font-size: 36px;
     margin-top: 3rem;
     margin-bottom: 5rem;
+    color: #000;
 }
 
 .features-grid {
@@ -153,8 +156,7 @@ body, html {
 
 /*fleet-moreTOexplore*/
 .fleet-moreTOexplore{
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
-    height: 90vh;
+    height: 80vh;
     color: white;
 }
 .fleet-moreTOexplore h1,p{
@@ -167,120 +169,14 @@ body, html {
     padding-bottom: 4rem;
 }
 .fleet-moreTOexplore h1{
+    color: #000;
     font-size: 36px;
 }
 .fleet-moreTOexplore p{
+    color: #000;
     font-size: 2rem;
 }
-/*carosal*/
-:root {
-    --primary: #000000;
-  }
-  html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  .d-flex {
-    display: flex;
-    align-items: center;
-  }
-  .container {
-    max-width: 114rem;
-    margin: 0 auto;
-  }
-  .trip {
-    overflow: hidden;
-  }
-  .trip .row {
-    width: 95vw;
-    position: relative;
-  }
-  
-  .trip .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .trip .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
-  }
-  
-  .trip .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-  
-  .custom-next,
-  .custom-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--primary);
-    color: var(--white);
-    font-size: 2.5rem;
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .custom-next {
-    right: -60px;
-  }
-  .custom-prev {
-    left: -60px;
-  }
-  
-  .custom-pagination {
-    position: absolute;
-    bottom: -10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .swiper-pagination-bullet {
-    width: 30px;
-    height: 7px;
-    border-radius: 5px;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background-color: var(--primary);
-  }
-  
-  .swiper-pagination-bullet:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .trip .explore {
-    text-align: center;
-    margin-top: 8rem;
-  }
-  
-  @media (max-width: 1200px) {
-    .custom-next,
-    .custom-prev {
-      top: -15%;
-      transform: translateY(0%);
-    }
-  
-    .custom-next {
-      right: 10px;
-    }
-    .custom-prev {
-      left: auto;
-      right: 70px;
-    }
-  }
+
   
   
 
@@ -290,12 +186,11 @@ body, html {
 
 /*fleet-section*/
 .fleet-body {
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -308,6 +203,7 @@ body, html {
     font-size: 36px;
     margin-bottom: 5rem;
     padding-top: 3rem;
+    color: #000;
 }
 
 .fleet-grid {
@@ -397,12 +293,11 @@ body, html {
 
 /*special offer*/
 .special-offer {
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 130vh;
+    height: 110vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -419,6 +314,7 @@ body, html {
 .special-offer h1 {
     margin-bottom: 9rem;
     font-size: 36px;
+    color: #000;
 }
 
 .offers {
@@ -491,12 +387,11 @@ button:hover {
 
 /*Testination*/
 .testi {
-    background-image: url('./images/Black_Simple_Dark_Graphic_Design_Portfolio_Website_UI_Prototype.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     color: white;
@@ -511,6 +406,7 @@ button:hover {
 }
 
 .testimonials-container h1 {
+    color: #000;
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -523,18 +419,18 @@ button:hover {
 
 .testimonial {
     background-image: url('./images/photo_2024-06-30_13-45-02.jpg');
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
     text-align: center;
 }
 
 .testimonial .profile-pic {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 15px;

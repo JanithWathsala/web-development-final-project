@@ -1,80 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-.banner {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.75) 50%), url('./images/background.jpg');
+.about-banner {
     background-size: cover;
     background-position: center;
-}
-
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 5px 0;
+    background-repeat: no-repeat;
+    background-image: url();
+    font-family: poppins;
+    height: 90vh;
     display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    justify-content: space-between;
-}
+    background-color: #000;
 
-.logo {
-    width: 90px;
-    cursor: pointer;
 }
-
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-.navbar ul li a:hover {
-    color: red;
-}
-
 .content {
-    position: relative;
-    height: auto;
     width: 1200px;
     transform: translateY(-50%);
     text-align: left;
     color: #fff;
-    margin-top: 200px;
-    margin-left: 50px;
-    padding: 0%;
+    margin-top: 400px;
+    margin-left: 4px;
 }
-
-.content h1, h2 {
+.content h1 {
     font-size: 70px;
-    padding-left: 70px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 2%;
-    font-weight:bolder;
 }
-
 .content h2 {
+    font-size: 50px;
     font-weight:bolder;
 }
 
-.content p {
-    letter-spacing: 2px;
-    padding-left: 65px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 1px;
-}
+
+
+
+
+
+
 .intro {
     margin-top:2% ;
     width: 50%;
@@ -156,6 +116,11 @@
     line-height: 30px;
     padding-left: 50px;
 }
+
+
+
+
+
 .intro3 {
     margin-top:2% ;
     width: 50%;
@@ -201,6 +166,21 @@
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .team-section {
     text-align: center;
     padding: 50px 20px;
@@ -243,235 +223,10 @@
     color: #555;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-content a {
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.subscribe {
-    max-width: 300px;
-}
-
-.subscribe h2 {
-    margin-bottom: 10px;
-}
-
-.subscribe input {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 4px;
-}
-
-.subscribe button {
-    padding: 10px;
-    background: #ff6f61;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-}
-
-.social-media-links {
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(255, 0, 0); /* Ensure the text color is white for visibility */
-}
-
-.social-media-links h3 {
-    font-family: 'Archivo Black', Arial, sans-serif;
-    margin-bottom: 10px;
-    color: rgb(0, 0, 0); /* Ensure the text color is white for visibility */
-}
-
-.social-media-links a {
-    margin: 0 50px;
-    display:inline-block;
-}
-
-.social-media-links img {
-    width: 40px; /* Adjust the size of the icons */
-    height: 40px; /* Adjust the size of the icons */
-    /*filter: brightness(0) invert(1); /* Make icons white; adjust as needed */
-    /*transition: transform 0.3s, filter 0.3s;*/
-}
-
-.social-media-links a:hover img {
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
-    filter: brightness(1) invert(0); /* Invert the color on hover; adjust as needed */
-}
 
 
-footer {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    background: #000000;
-    color: rgb(255, 255, 255);
-}
 
-footer .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
 
-footer .footer-section {
-    flex: 1 1 300px;
-    margin: 10px;
 
-}
 
-footer .footer-section h2 {
-    font-family: 'Archivo Black', Arial, sans-serif;
-    margin-bottom: 10px;
-}
-footer .footer-section a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 40px;
-    font-size: 20px;
-    
 
-}
-
-footer .footer-section a:hover {
-    color: rgb(255, 255, 255);
-   
-}
-
-footer .footer-bottom {
-    border-top: 1px solid #ffffff;
-    padding-top: 10px;
-    font-size: 14px;
-}
-
-footer .footer-bottom a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer .footer-bottom a:hover {
-    color: rgb(255, 255, 255);
-}
-
-footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer form input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 300px;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-footer form label.consent {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-footer .footer-section a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 40px;
-    font-size: 20px;
-    
-
-}
-
-footer .footer-section a:hover {
-    color: rgb(255, 255, 255);
-   
-}
-
-footer .footer-bottom {
-    border-top: 1px solid #ffffff;
-    padding-top: 10px;
-    font-size: 14px;
-}
-
-footer .footer-bottom a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer .footer-bottom a:hover {
-    color: rgb(255, 255, 255);
-}
-
-footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer form input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 300px;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-footer form label.consent {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-footer form label.consent input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-footer form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 150px;
-}
-
-footer form button[type="submit"]:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: red;
-}

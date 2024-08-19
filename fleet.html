@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./fleet.css">
     <link rel="stylesheet" href="./all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+   />
+   <link
+     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+     rel="stylesheet"
+   />
 </head>
 <body>
     <section class="video-container">
@@ -32,10 +40,10 @@
 
 
     <section class="popularFleet">
-        <h2>Popular Fleet</h2>
+        <h2 data-aos="fade-right" data-aos-duration="2000">Popular Fleet</h2>
         <div class="pf-grid">
             <div class="pf-left">
-                <div class="img-com">
+                <div class="pf-img-com" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./image/fleet/photo_2024-07-01_12-37-10.jpg" style="width: 600px; height:auto; " alt="">
                     <button class="details-button" onclick="showDetails('details1')">Details</button>
                     <div class="details-popup" id="details1">
@@ -46,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-com">
+                <div class="pf-img-com"  data-aos="fade-up" data-aos-duration="1000">
                     <img src="./image/fleet/space-perspective-capsule.jpg" style="width: 600px; height:auto;" alt="">
                     <button class="details-button" onclick="showDetails('details2')">Details</button>
                     <div class="details-popup" id="details2">
@@ -59,7 +67,7 @@
                 </div>
             </div>
             <div class="pf-right"> 
-                <div class="img-com">
+                <div class="pf-img-com" data-aos="fade-down" data-aos-duration="1000">
                     <img src="./image/fleet/intro-1652052721.jpg" style="width: 600px; height:auto;" alt="">
                     <button class="details-button" onclick="showDetails('details3')">Details</button>
                     <div class="details-popup" id="details3">
@@ -70,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-com">
+                <div class="pf-img-com"  data-aos="fade-left" data-aos-duration="1000">
                     <img src="./image/fleet/photo_2024-07-01_12-37-13.jpg" style="width: 600px; height:auto;" alt="">
                     <button class="details-button" onclick="showDetails('details4')">Details</button>
                     <div class="details-popup" id="details4">
@@ -87,22 +95,80 @@
         
     </section>
 
-    <section class="fleet-moreTOexplore">
-        <h2>More TO Explore</h2>
-        <div class="carousel">
-            <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
-            <div class="carousel-container">
-                <div class="carousel-images">
-                    <img src="./image/fleet/a.jpg" alt="Image 1">
-                    <img src="./image/fleet/b.jpg" alt="Image 2">
-                    <img src="./image/fleet/c.jpg" alt="Image 1">
-                    <img src="./image/fleet/a.jpg" alt="Image 2">
-                    <img src="./image/fleet/b.jpg" alt="Image 2">
-                    <img src="./image/fleet/a.jpg" alt="Image 2">
-                    <img src="./image/fleet/c.jpg" alt="Image 1">      
-                </div>
+    
+    <section class="section fleet-car" id="trip">
+        <h1 class="fleet-carFT" data-aos="fade-down" data-aos-duration="1000">MORE EXPLORE</h1>
+        <p class="fleet-carFT-p" data-aos="fade-down" data-aos-duration="1000">These detailed descriptions highlight the unique features, capabilities, and luxurious<br> amenities of each starship model in your fleet, appealing to clients seeking <br>unparalleled experiences in space travel.</p>
+        <div class="row container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="swiper-container slider-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/pp1.jpg" alt="hero image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pp7.jpg" alt="" />
+              </div>
             </div>
-            <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+          </div>
+          <div class="custom-next d-flex">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="custom-prev d-flex">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+          <div class="custom-pagination d-flex"></div>
+        </div>
+    </section>
+
+    <section class="dt-place-section">
+        <h1 class="fleet-otherFT">OTHER FLEET</h1>
+        <div class="dt-right-card card-dt">
+            <div class="dt-right-content content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Elysium Fields</h1>
+                <p class="distance">Distance: 620 light-years from Earth.</p>
+                <p class="description">
+                    Elysium Fields is a lush, verdant planet with expansive fields of alien flora and fauna. Nature enthusiasts can embark on guided tours to discover unique plant species, hike through stunning landscapes, and participate in conservation efforts. The planet's luxury eco-lodges offer comfortable stays with minimal environmental impact.
+                </p>
+            </div>
+            <img src="/image/Elysium Fields.jpg" alt="Elysium Fields" class="right-image" data-aos="fade-left" data-aos-duration="1000">
+        </div>
+    
+        <!-- Third Card: Nebula Haven -->
+        <div class="dt-left-card card-dt">
+            <img src="/image/nebula.jpg" alt="Nebula Haven" class="left-image" data-aos="fade-right" data-aos-duration="1000">
+            <div class="dt-left-content content" data-aos="fade-left" data-aos-duration="1000">
+                <h1>Nebula Haven</h1>
+                <p class="distance">Distance: 1,200 light-years from Earth.</p>
+                <p class="description">
+                    Nestled within the serene folds of a nebula, Nebula Haven offers a tranquil retreat surrounded by swirling cosmic clouds and star formations. The resort features panoramic observation decks, spa services that utilize nebula-infused treatments, and eco-friendly lodges designed to blend seamlessly with the ethereal surroundings.
+                </p>
+            </div>
+        </div>
+
+        <div class="dt-right-card card-dt">
+            <div class="dt-right-content content" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Elysium Fields</h1>
+                <p class="distance">Distance: 620 light-years from Earth.</p>
+                <p class="description">
+                    Elysium Fields is a lush, verdant planet with expansive fields of alien flora and fauna. Nature enthusiasts can embark on guided tours to discover unique plant species, hike through stunning landscapes, and participate in conservation efforts. The planet's luxury eco-lodges offer comfortable stays with minimal environmental impact.
+                </p>
+            </div>
+            <img src="/image/Elysium Fields.jpg" alt="Elysium Fields" class="right-image" data-aos="fade-left" data-aos-duration="1000">
         </div>
     </section>
 
@@ -111,8 +177,8 @@
         <h3>Follow Us ON</h3>
         <a href="https://www.facebook.com" ><img src="/images/facebook.png" alt="Facebook"></a>
         <a href="https://www.twitter.com" ><img src="/images/twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com" ><img src="/images/linkedin.png" alt="linkedin"></a>
-        <a href="https://www.linkedin.com" ><img src="/images/youtube.png" alt="Youtube"></a>
+        <a href="https://www.linkedin.com" ><img src="/images/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.youtube.com/" ><img src="/images/youtube.png" alt="Youtube"></a>
     </div>
 
      <!-- Footer Section -->
@@ -145,6 +211,12 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./fleet.js"></script>
 </body>
 </html>
