@@ -83,7 +83,6 @@ body, html {
 
 .title-key {
     font-size: 36px;
-    margin-top: 3rem;
     margin-bottom: 5rem;
     color: #000;
 }
@@ -156,7 +155,7 @@ body, html {
 
 /*fleet-moreTOexplore*/
 .fleet-moreTOexplore{
-    height: 80vh;
+    height: 75vh;
     color: white;
 }
 .fleet-moreTOexplore h1,p{
@@ -190,7 +189,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -201,9 +200,13 @@ body, html {
     text-align: center;
     align-items: center;
     font-size: 36px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     padding-top: 3rem;
     color: #000;
+}
+.fleet-paragraph{
+    color: #000;
+    font-size: large;
 }
 
 .fleet-grid {
@@ -243,10 +246,17 @@ body, html {
     z-index: 1;
 }
 
-.fleet-box h2, .fleet-box p {
+.fleet-box h2 {
     position: relative;
     z-index: 2;
     margin: 0;
+    font-size: 20px;
+}
+.fleet-box p{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-size: large;
 }
 
 .details-btn {
@@ -258,7 +268,7 @@ body, html {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: auto;
 }
 
@@ -297,7 +307,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     font-family: poppins;
-    height: 110vh;
+    height: 120vh;
     display: flex;
     color: white;
     flex-direction: column;
@@ -312,16 +322,24 @@ body, html {
 }
 
 .special-offer h1 {
-    margin-bottom: 9rem;
+    margin-bottom: 1rem;
     font-size: 36px;
     color: #000;
 }
+.offer-par{
+    color: #000;
+    font-size: 17px;
+    padding-bottom: 6rem;
+}
+
 
 .offers {
+    margin-left: 13rem;
     display: flex;
     justify-content: space-around;
     gap: 20px;
     max-width: 1200px;
+    text-align: center;
 }
 
 .offer {
@@ -332,6 +350,7 @@ body, html {
     text-align: left;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    align-items: center;
 }
 
 .offer img {
@@ -355,7 +374,7 @@ body, html {
 }
 
 .offer p {
-    font-size: medium;
+    font-size: large;
     line-height: 1.5;
     margin-bottom: 15px;
 }
@@ -423,6 +442,7 @@ button:hover {
     border-radius: 30px;
     padding: 20px;
     width: 300px;
+    height: 450px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
     text-align: center;
@@ -456,7 +476,7 @@ button:hover {
 }
 
 .testimonial p {
-    font-size: 14px;
+    font-size: large;
     line-height: 1.5;
     margin-top: 10px;
 }
