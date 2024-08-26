@@ -14,6 +14,7 @@ html,body{
     position: relative;
     height: 100vh;
     overflow: hidden;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
 }
 
 #background-video {
@@ -25,6 +26,7 @@ html,body{
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
+    
 }
 
 .overlay {
@@ -42,7 +44,7 @@ html,body{
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    padding-top: 60rem;
+    padding-top: 66rem;
 }
 .heading h1{
     font-family: poppins;
@@ -56,6 +58,21 @@ html,body{
 .heading p{
     font-family: poppins;
     font-size: 17px;
+}
+.cta-button {
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: medium;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
 }
 
 
@@ -402,7 +419,7 @@ html,body{
   margin-top:5rem ;
 }
 .card-dt {
-  margin-left: 4.5rem;
+  margin-left: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -503,6 +520,10 @@ footer {
   footer .footer-section h2 {
     font-family: poppins;
     margin-bottom: 10px;
+    font-size: large;
+  }
+  .footer-section p{
+    font-size: medium;
   }
   footer .footer-section a {
     color: rgb(255, 255, 255);
