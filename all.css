@@ -241,11 +241,13 @@ html,body{
   font-family: 'Archivo Black', Arial, sans-serif;
   text-align:left;
   color: white; 
+  font-size: 36px;
 }
 .bf-form-container p {
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  color: white; 
+  color: white;
+  font-size: large; 
 }
 .bf-form-row {
   display: flex;
@@ -266,6 +268,7 @@ html,body{
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
   color: white;
+  font-size: large;
 }
 .bf-form-group input, .bf-form-group textarea {
   padding: 10px;
