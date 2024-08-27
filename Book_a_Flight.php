@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./all.css">
 </head>
 <body>
+    
     <section class="video-container">
         <video autoplay muted loop id="background-video">
             <source src="./images/Rocket.mp4" type="video/mp4">
@@ -19,7 +20,7 @@
                     <li><a href="./Book_a_Flight.html">Book a flight</a></li>
                     <li><a href="./destination.html">Destination</a></li>
                     <li><a href="./fleet.html">Fleet</a></li>  
-                    <li><a href="./Offer.html">Offers</a></li>
+                    <li><a href="#">Offers</a></li>
 
                 </ul>
             </div>
@@ -36,6 +37,42 @@
             <h2>Contact Details</h2>
             <p>* indicates a required field</p>
             <form action="submit_booking.php" method="post">
+                <div class="bf-form-row">
+
+                    <div class="bf-form-group">
+                        <label for="firstName">Select Flight *</label>
+                        <select name="flight_id" id="flight">                          
+                            <?php 
+                            // Connect to the database
+                            $conn = new mysqli('localhost', 'root', '', 'astralflights');
+                            if ($conn->connect_error) {
+                                die("Connection failed: " . $conn->connect_error);
+                            }
+                
+                            // Fetch available flights
+                            $sql = "SELECT id, flight_name, available_seats FROM flights";
+                            $result = $conn->query($sql);
+                
+                            if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                    echo "<option value='".$row['id']."'>".$row['flight_name']." (Available Seats: ".$row['available_seats'].")</option>";
+                                }
+                            } else {
+                                echo "<option>No flights available</option>";
+                            }
+                
+                            $conn->close();
+                            ?>        
+                            
+            
+                        </select>
+                    </div>
+                    <div class="bf-form-group">
+                        <label for="lastName">Seats to Book *</label>
+                        <input type="number" name="seats_to_book" id="seats_to_book" required>
+                    </div>
+                </div>
+
                 <div class="bf-form-row">
                     <div class="bf-form-group">
                         <label for="firstName">First Name *</label>
@@ -100,7 +137,8 @@
                     </label>
                 </div>
                 
-                <button type="submit">Submit</button>
+                <input type="submit" value="Book Now" <?php if ($result->num_rows == 0) echo 'disabled'; ?>   >
+                <!--<button type="submit">Submit</button>-->
             </form>
         </div>
     </div>
@@ -138,13 +176,10 @@
         <div class="footer-bottom">
             &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
             <br>
-            <a href="./privacy policy.html">Privacy Policy</a> | <a href="./Terms of use.html">Terms Of Use</a>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
         </div>
-    </footer>  
-        
-        
-    </body>
-    </html>
+    </footer>
+    
     
 </body>
 </html>
