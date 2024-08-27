@@ -50,15 +50,26 @@ body, html {
     font-family: poppins;
     font-size: 80px;
     margin: 0;
+    transition: transform 0.3s;
 }
 .heading h2{
     font-family: poppins;
+    transition: transform 0.3s;
 }
 .heading p{
     font-family: poppins;
     font-size: medium;
+    transition: transform 0.3s;
 }
-
+.heading h1:hover {
+    transform: scale(1.05);
+}
+.heading h2:hover {
+    transform: scale(1.05);
+}
+.heading p:hover {
+    transform: scale(1.05);
+}
 
 
 

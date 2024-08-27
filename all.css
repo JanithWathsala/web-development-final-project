@@ -50,15 +50,28 @@ html,body{
     font-family: poppins;
     font-size: 100px;
     margin: 0;
+    transition: transform 0.3s;
 }
 .heading h2{
     font-family: poppins;
     font-size: medium;
+    transition: transform 0.3s;
 }
 .heading p{
     font-family: poppins;
     font-size: 17px;
+    transition: transform 0.3s;
 }
+.heading h1:hover {
+  transform: scale(1.05);
+}
+.heading h2:hover {
+  transform: scale(1.05);
+}
+.heading p:hover {
+  transform: scale(1.05);
+}
+
 .cta-button {
   padding: 15px 30px;
   background-color: #ff6600;
@@ -73,6 +86,7 @@ html,body{
 
 .cta-button:hover {
   background-color: #ff4500;
+  transform: scale(1.05);
 }
 
 
