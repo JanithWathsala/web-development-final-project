@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contactu.css">
+    <link rel="stylesheet" href="./css/contactu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
-<body style="background-image:url(/images/Dream-Chaser.jpg);">
+<body style="background-image:url(./images/Dream-Chaser.jpg);">
 
     <div class="navbar">
         <ul>
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+            <li><a href="./Book_a_Flight.php">Book a flight</a></li>
             <li><a href="./destination.html">Destination</a></li>
             <li><a href="./fleet.html">Fleet</a></li>  
             <li><a href="./Offer.html">Offers</a></li>
@@ -24,7 +24,7 @@
     </div>
     <div class="container">
         <div class="left-column">
-            <form action="#" method="post">
+            <form action="./contactus.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -38,7 +38,7 @@
                 <input type="text" id="coname" name="coname">
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message"  required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
@@ -76,8 +76,8 @@
                 <div class="footer-section">
                     <h2>Subscribe</h2>
                     <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                    <form>
-                        <input type="email" placeholder="Email" required>
+                    <form action="./subscription.php" method="post">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                         <label class="consent">
                             <input type="checkbox" required>
                             Please click to confirm your consent to receive email updates from us.

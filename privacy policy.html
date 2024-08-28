@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="./privacy policy.css">
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/privacy policy.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
     <div class="banner">
@@ -13,7 +13,7 @@
             <div class="navbar">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                    <li><a href="./Book_a_Flight.php">Book a flight</a></li>
                     <li><a href="./destination.html">Destination</a></li>
                     <li><a href="./fleet.html">Fleet</a></li>  
                     <li><a href="./Offer.html">Offers</a></li>
@@ -154,8 +154,8 @@
                 <div class="footer-section">
                     <h2>Subscribe</h2>
                     <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                    <form>
-                        <input type="email" placeholder="Email" required>
+                    <form action="./subscription.php" method="post">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                         <label class="consent">
                             <input type="checkbox" required>
                             Please click to confirm your consent to receive email updates from us.

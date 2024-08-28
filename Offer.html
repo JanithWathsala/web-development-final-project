@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Tour Offers</title>
-    <link rel="stylesheet" href="OfferStyle.css">
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/OfferStyle.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
     <section class="video-container">
@@ -16,7 +16,7 @@
             <div class="navbar">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                    <li><a href="./Book_a_Flight.php">Book a flight</a></li>
                     <li><a href="./destination.html">Destination</a></li>
                     <li><a href="./fleet.html">Fleet</a></li>  
                     <li><a href="./Offer.html">Offers</a></li>
@@ -74,16 +74,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <a href="#">About Us</a>
+                <a href="./about01.html">About Us</a>
                 <a href="#">FAQ</a>
                 <a href="#">Support</a>
-                <a href="#">Contact</a>
+                <a href="./contactus.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h2>Subscribe</h2>
                 <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                <form>
-                    <input type="email" placeholder="Email" required>
+                <form action="./subscription.php" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <label class="consent">
                         <input type="checkbox" required>
                         Please click to confirm your consent to receive email updates from us.
@@ -95,7 +95,7 @@
         <div class="footer-bottom">
             &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
             <br>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
+            <a href="./privacy policy.html">Privacy Policy</a> | <a href="./Terms of use.html">Terms Of Use</a>
         </div>
     </footer> 
 </body>

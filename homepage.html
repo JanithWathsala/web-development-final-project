@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./css/homepage.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/all.css">
      <!-- ======== Boxicons ======= -->
      <link
      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -29,7 +29,7 @@
             <div class="navbar">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                    <li><a href="./Book_a_Flight.php">Book a flight</a></li>
                     <li><a href="./destination.html">Destination</a></li>
                     <li><a href="./fleet.html">Fleet</a></li>  
                     <li><a href="./Offer.html">Offers</a></li>
@@ -232,10 +232,10 @@
 <div>
     <div class="social-media-links">
         <h3>Follow Us ON</h3>
-        <a href="https://www.facebook.com" ><img src="/images/facebook.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com" ><img src="/images/twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com" ><img src="/images/linkedin.png" alt="linkedin"></a>
-        <a href="https://www.linkedin.com" ><img src="/images/youtube.png" alt="Youtube"></a>
+        <a href="https://www.facebook.com" ><img src="./images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com" ><img src="./images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" ><img src="./images/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.linkedin.com" ><img src="./images/youtube.png" alt="Youtube"></a>
     </div>
 </div>
 
@@ -251,8 +251,8 @@
         <div class="footer-section">
             <h2>Subscribe</h2>
             <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-            <form>
-                <input type="email" placeholder="Email" required>
+            <form action="./subscription.php" method="post">
+                <input type="email" id="email" name="email" placeholder="Email" required>
                 <label class="consent">
                     <input type="checkbox" required>
                     Please click to confirm your consent to receive email updates from us.
