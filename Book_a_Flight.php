@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fly to Space</title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
     
@@ -17,10 +17,10 @@
             <div class="navbar">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                    <li><a href="./Book_a_Flight.php">Book a flight</a></li>
                     <li><a href="./destination.html">Destination</a></li>
                     <li><a href="./fleet.html">Fleet</a></li>  
-                    <li><a href="#">Offers</a></li>
+                    <li><a href="./Offer.html">Offers</a></li>
 
                 </ul>
             </div>
@@ -50,7 +50,7 @@
                             }
                 
                             // Fetch available flights
-                            $sql = "SELECT id, flight_name, available_seats FROM flights";
+                            $sql = "SELECT id, flight_name, available_seats FROM flights  WHERE available_seats >= 0";
                             $result = $conn->query($sql);
                 
                             if ($result->num_rows > 0) {
@@ -163,8 +163,8 @@
             <div class="footer-section">
                 <h2>Subscribe</h2>
                 <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                <form>
-                    <input type="email" placeholder="Email" required>
+                <form action="./subscription.php" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <label class="consent">
                         <input type="checkbox" required>
                         Please click to confirm your consent to receive email updates from us.

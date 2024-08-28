@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
     <div class="about-banner">
         <div class="navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="./Book_a_Flight.html">Book a flight</a></li>
+                <li><a href="./Book_a_Flight.php">Book a flight</a></li>
                 <li><a href="./destination.html">Destination</a></li>
                 <li><a href="./fleet.html">Fleet</a></li>  
                 <li><a href="./Offer.html">Offers</a></li>
@@ -23,26 +23,29 @@
         </div>
     </div>
 
-
-    <hr class="black-line">
-    <div class="intro">
-        <h1>Introduction</h1>
-        <p>Welcome to AstralFlights!
+     <!-- First Card: Aurora Prime -->
+     <div class="dt-left-card card-dt">
+        <img src="./image/aurora.jpg" alt="Aurora Prime" class="left-image" data-aos="fade-right" data-aos-duration="1000">
+        <div class="dt-left-content content">
+            <h2>INTRODUCTION</h2>
+            <p class="description">
+                Welcome to AstralFlights!
             We are dedicated to
             providing unparalleled
             interstellar travel
             experiences. Our mission is
             to make space travel
-            accessible and unforgettable for everyone.</p>
+            accessible and unforgettable for everyone.
+            </p>
+        </div>
     </div>
 
-    <div class ="introimg">
-    </div>
-
-    <hr class="black-line">
-    <div class="intro2">
-        <h1>Our Story</h1>
-        <p>At AstralFlights, our journey began with a
+    <!-- Second Card: Elysium Fields -->
+    <div class="dt-right-card card-dt">
+        <div class="dt-right-content content">
+            <h2>OUR STORY</h2>
+            <p class="description">
+                At AstralFlights, our journey began with a
             dream—to open the vast expanse of the
             universe to everyone. Founded by a group
             of passionate space enthusiasts, we
@@ -60,34 +63,31 @@
             industry, offering unique and
             unforgettable experiences to explorers
             worldwide.
-        </p>
-      
-        
-          
-
+            </p>
+        </div>
+        <img src="./image/Elysium Fields.jpg" alt="Elysium Fields" class="right-image" data-aos="fade-left" data-aos-duration="1000">
     </div>
 
-    <div class ="introimg2">
-    </div>
-
-    <hr class="black-line">
-    <div class="intro3">
-        <h1>Our Services</h1>
+    <!-- Third Card: Nebula Haven -->
+    <div class="dt-left-card card-dt">
+        <img src="./image/nebula.jpg" alt="Nebula Haven" class="left-image" data-aos="fade-right" data-aos-duration="1000">
+        <div class="dt-left-content content">
+            <h2>Our Services</h2>
         <p>We offer luxurious space
             travel with the following
             features:</p>
-        <ul >
-          <li>Spacious cabins with</li>panoramic views
-          <li>Gourmet dining</li>
-          <li>entertainment</li>
-          <li>Personalized services</li>
-        </ul>
+        <p>
+        Spacious cabins with<br>
+        panoramic views<br>
+        Gourmet dining<br>
+        entertainment<br>
+        Personalized services
+        </p>
+          
+        
+        </div>
     </div>
 
-    <div class ="introimg3">
-    </div>
-
-    <hr class="black-line">
     <section class="team-section">
             <h1>Our Team</h1>
             <div class="team-container">
@@ -145,11 +145,11 @@
             <div class="footer-section">
                 <h2>Subscribe</h2>
                 <p>Sign up to receive updates on Astral Flights' announcements, launches, and opportunities.</p>
-                <form>
-                    <input type="email" placeholder="Email" required>
+                <form action="./subscription.php" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <label class="consent">
                         <input type="checkbox" required>
-                            Please click to confirm your consent to receive email updates from us.
+                        Please click to confirm your consent to receive email updates from us.
                     </label>
                     <button type="submit">Submit</button>
                 </form>
