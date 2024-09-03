@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  .video-container {
+      position: relative;
+      height: 150vh;
+      overflow: hidden;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+  }
+
+
+h1{
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    padding-top: 7rem;
+}
+h2{
+    font-size: 50px;
+    color: #020000;
+    text-align: center;
+}
+
+.next-ride-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+td {
+    text-align: center;
+    color: #020000;
+    font-size: medium;
+    font-weight: bold;
+    font-family: poppins;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.cta-button {
+    text-align: center;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+  }
+  
