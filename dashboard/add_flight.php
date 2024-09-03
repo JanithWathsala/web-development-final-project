@@ -108,8 +108,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
+            <div class="toggle">
+                   <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
                 <div class="search">
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
 
                 <div class="user">
-                    <img src="https://img.icons8.com/?size=100&id=TmshBLOFvt3H&format=png&color=000000" alt="">
+                    
                 </div>
             </div>
             <div class="details">

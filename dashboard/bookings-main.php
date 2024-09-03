@@ -102,7 +102,7 @@ $result = $conn->query($sql);
                 </div>
 
                 <div class="user">
-                    <img src="https://img.icons8.com/?size=100&id=TmshBLOFvt3H&format=png&color=000000" alt="">
+                   
                 </div>
             </div>
             <div class="details">
