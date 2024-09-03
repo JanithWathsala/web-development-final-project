@@ -144,10 +144,10 @@
     </div>
     <div class="social-media-links">
         <h3>Follow Us ON</h3>
-        <a href="https://www.facebook.com" ><img src="/images/facebook.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com" ><img src="/images/twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com" ><img src="/images/linkedin.png" alt="linkedin"></a>
-        <a href="https://www.linkedin.com" ><img src="/images/youtube.png" alt="Youtube"></a>
+        <a href="https://www.facebook.com" ><img src="./images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com" ><img src="./images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" ><img src="./images/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.linkedin.com" ><img src="./images/youtube.png" alt="Youtube"></a>
     </div>
 
 
