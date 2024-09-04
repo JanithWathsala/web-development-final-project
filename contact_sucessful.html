@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Successfully</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cecece;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .success-container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .success-container h1 {
+            color: #000000;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .success-container p {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+        .success-container .checkmark {
+            font-size: 80px;
+            color: #2bc71c;
+        }
+        .success-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .success-container button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">&#10004;</div>
+        <h1>Your Details Have Been Successfully Submitted!</h1>
+        <p>Thank you for providing your information. We’ve received your submission and our team is already reviewing it.</p>
+        <button onclick="window.history.back()">OK</button>
+    </div>
+</body>
+</html>
