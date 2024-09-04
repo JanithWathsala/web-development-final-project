@@ -276,11 +276,12 @@ body, html {
     background-color: #ff4500;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 2rem;
     margin-top: auto;
+    text-decoration: none;
 }
 
 .details-btn:hover {
@@ -399,6 +400,7 @@ body, html {
     cursor: pointer;
     font-size: 14px;
     width: 100%;
+    text-decoration: none;
     box-sizing: border-box;
 }
 

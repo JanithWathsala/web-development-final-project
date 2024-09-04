@@ -98,11 +98,14 @@ html,body{
     width: 100%;
     z-index: 3;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-direction: row;
+    gap: 73rem;
     background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar ul {
+    justify-content: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -123,6 +126,11 @@ html,body{
 }
 .navbar ul li a:hover {
     color: red;
+}
+.navbar img{
+  display: flex;
+  width: 50px;
+  justify-content: left;
 }
 
 

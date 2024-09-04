@@ -1,0 +1,280 @@
+
+
+.hero {
+    height: 100vh;
+    background: url('images/5.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/*
+section 2 */
+.faq-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+.faq-overlay {
+
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin-left: 300px;
+}
+
+.faq-section h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.faq-category {
+    margin-bottom: 40px;
+}
+
+.faq-category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* section3 */
+.faq-section2 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.faq-item2 {
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.faq-item2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+
+.faq-item2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 70px;
+}
+
+.faq-category2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+
+}
+
+/* section3 */
+.faq-section3 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.faq-item3 {
+    margin-bottom: 20px;
+}
+
+.faq-item3 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 300px;
+}
+
+
+.faq-item3 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 370px;
+}
+
+.faq-category3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+}
+
+/* footer section */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+footer {
+    background-color: #080707;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.left-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.left-section p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.left-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    width: 40%;
+}
+
+.right-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.right-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.right-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.right-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.checkbox-container a {
+    color: #b3d4fc;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+.right-section button {
+    background-color: #b53474;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-section button:hover {
+    background-color: #a22c68;
+}
+
+

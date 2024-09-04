@@ -1,22 +1,16 @@
-/*=============== GOOGLE FONTS ===============*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-/*=============== VARIABLES CSS ===============*/
+
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 0%);
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --h1-font-size: 1.75rem;
   --normal-font-size: 1rem;
   --small-font-size: .813rem;
-  /*========== Font weight ==========*/
   --font-medium: 500;
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -53,11 +47,11 @@ header {
   position: absolute;
   top: 1px;
   left: 20px;
-  z-index: 1000; /* Ensure it appears above other elements */
+  z-index: 1000;
 }
 
 .site-logo {
-  width: 100px; /* Adjust as needed */
+  width: 100px; 
   height: auto;
 }
 
@@ -69,11 +63,11 @@ header {
   margin-bottom: 1rem;
   z-index: 2;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   display: inline-block;
-  backdrop-filter: blur(5px); /* Apply blur to the background image behind the title */
+  backdrop-filter: blur(5px); 
 }
 
 
@@ -81,7 +75,7 @@ header {
 
 
 
-/*=============== LOGIN ===============*/
+/*---------------loging---------------------*/
 .login {
   position: relative;
   height: 100vh;
@@ -199,20 +193,19 @@ header {
   text-decoration: underline;
 }
 
-/* Input focus move up label */
+
 .login__input:focus + .login__label {
   top: -12px;
   font-size: var(--small-font-size);
 }
 
-/* Input focus sticky top label */
+
 .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
   top: -12px;
   font-size: var(--small-font-size);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
   .login {
     justify-content: center;
