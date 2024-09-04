@@ -4,10 +4,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/all.css">
+    <link
+     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+   />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <div class="about-banner">
         <div class="navbar">
+            <img src="./images/logo.png" alt="">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="./Book_a_Flight.php">Book a flight</a></li>
@@ -16,7 +26,7 @@
                 <li><a href="./Offer.html">Offers</a></li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content_home">
             <h2>ABOUT</h2>
             <h1>ASTRAL<br>FLIGHTS</h1>
             <p>We're committed to building a road to space<br> so our children can build the future.</p>
@@ -25,24 +35,18 @@
 
      <!-- First Card: Aurora Prime -->
      <div class="dt-left-card card-dt">
-        <img src="./image/aurora.jpg" alt="Aurora Prime" class="left-image" data-aos="fade-right" data-aos-duration="1000">
-        <div class="dt-left-content content">
+        <img src="./images/introduction.jpg" alt="Aurora Prime" class="left-image" data-aos="fade-right" data-aos-duration="1000">
+        <div class="dt-left-content content" data-aos="fade-left" data-aos-duration="1000">
             <h2>INTRODUCTION</h2>
             <p class="description">
-                Welcome to AstralFlights!
-            We are dedicated to
-            providing unparalleled
-            interstellar travel
-            experiences. Our mission is
-            to make space travel
-            accessible and unforgettable for everyone.
+                Welcome to Astral Flights, where the dream of space exploration becomes a reality. As a leading space tour company, we offer unparalleled experiences that take you beyond the boundaries of Earth. Our expertly crafted journeys provide an opportunity to explore the cosmos in comfort and style, delivering an adventure that is truly out of this world. Whether you're seeking the thrill of interstellar travel or the peace of floating among the stars, Astral Flights is here to guide you on an unforgettable journey through the universe
             </p>
         </div>
     </div>
 
     <!-- Second Card: Elysium Fields -->
     <div class="dt-right-card card-dt">
-        <div class="dt-right-content content">
+        <div class="dt-right-content content" data-aos="fade-right" data-aos-duration="1000">
             <h2>OUR STORY</h2>
             <p class="description">
                 At AstralFlights, our journey began with a
@@ -65,61 +69,50 @@
             worldwide.
             </p>
         </div>
-        <img src="./image/Elysium Fields.jpg" alt="Elysium Fields" class="right-image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="./images/our story.jpg" alt="Elysium Fields" class="right-image" data-aos="fade-left" data-aos-duration="1000">
     </div>
 
     <!-- Third Card: Nebula Haven -->
     <div class="dt-left-card card-dt">
-        <img src="./image/nebula.jpg" alt="Nebula Haven" class="left-image" data-aos="fade-right" data-aos-duration="1000">
-        <div class="dt-left-content content">
+        <img src="./images/our service.jpg" alt="Nebula Haven" class="left-image" data-aos="fade-right" data-aos-duration="1000">
+        <div class="dt-left-content content" data-aos="fade-left" data-aos-duration="1000">
             <h2>Our Services</h2>
-        <p>We offer luxurious space
-            travel with the following
-            features:</p>
-        <p>
-        Spacious cabins with<br>
-        panoramic views<br>
-        Gourmet dining<br>
-        entertainment<br>
-        Personalized services
-        </p>
-          
-        
+        <p>At Astral Flights, we offer a diverse range of space travel services tailored to fulfill every explorer’s dream. Our space tours provide the thrill of interstellar travel, with expertly guided journeys to awe-inspiring celestial destinations. Travel in luxury aboard our cutting-edge spacecraft, designed for ultimate comfort, safety, and an unparalleled space experience. For those seeking a personalized adventure, we offer customized space journeys, allowing you to explore specific areas of interest, whether it’s orbiting Earth, visiting distant planets, or witnessing stunning cosmic phenomena. To ensure you’re fully prepared for your journey, we provide comprehensive space training programs that equip you for the unique demands of space travel. Our exclusive packages include pre-flight preparations, in-space activities, and post-flight experiences, making your voyage truly unforgettable.</p> 
         </div>
     </div>
 
     <section class="team-section">
             <h1>Our Team</h1>
             <div class="team-container">
-                <div class="team-member">
-                    <img src="./images/member.jpg" alt="John Doe">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./images/ceo.jpg" alt="John Doe">
                     <h2>John Doe - Founder & CEO</h2>
                     <p>John Doe is the visionary founder and CEO of AstralFlights. With a background in aerospace engineering and a passion for space exploration,John has dedicated his career to making interstellar travel accessible to everyone.Under his leadership,GalacticVoyager has grown from a small startup to a leading company in the space travel industry.John is committed to innovation,sustainability,and providing exceptional service to every traveler.</p>
                 </div>
-                <div class="team-member">
-                    <img src="./images/member.jpg" alt="Jane Smith">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
+                    <img src="./images/chief engineer.jpg" alt="Jane Smith">
                     <h2>Jane Smith - Chief Engineer</h2>
                     <p>Jane Smith is the Chief Engineer at AstralFlights, overseeing the design and maintenance of our state-of-the-art starships.With over 20 years of experience in aerospace engineering,Jane ensures that our fleet is equipped with the latest technology and safety features.Her expertise and attention to detail are crucial in maintaining the high standards of performance and reliability that our customers expect.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
                     <img src="./images/member.jpg" alt="Emily Johnson">
                     <h2>Emily Johnson - Head of Customer Experience</h2>
                     <p>Emily Johnson leads our Customer Experience team, dedicated to providing personalized and memorable journeys for every traveler.With a background in hospitality and passion for space tourism,Emily ensures that every aspect of our service is tailored to meet the unique needs and preferences of our guests.Her commitment to excellence is evident in the glowing reviews and repeat customers that GalacticVoyager proudly boasts.</p>
                 </div>
             </div>
             <div class="team-container">
-                <div class="team-member">
-                    <img src="./images/member.jpg" alt="Michael Lee">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="./images/operation manager.jpg" alt="Michael Lee">
                     <h2>Michael Lee - Operations Manager</h2>
                     <p>Michael Lee is the Operations Manager at GalacticVoyager, responsible for coordinating all aspects of our missions and ensuring smooth and efficient operations.With a military background and extensive experience in logistics,Michael excels in managing the complexities of space travel.His strategic planning and problem-solving skills are vital to the success of our interstellar voyages.</p>
                 </div>
-                <div class="team-member">
-                    <img src="./images/member.jpg" alt="Sarah Brown">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
+                    <img src="./images/marketing director.jpg" alt="Sarah Brown">
                     <h2>Sarah Brown - Marketing Director</h2>
                     <p>Sarah Brown is the Marketing Director at GalacticVoyager, driving our brand strategy and outreach efforts.With a creative flair and a deep understanding of the space travel market,Sarah creates compelling campaigns that highlight the unique experiences offered by GalacticVoyager.Her innovative approach to marketing helps us connect with adventures and space enthusiasts around the world.</p>
                 </div>
-                <div class="team-member">
-                    <img src="./images/member.jpg" alt="David Garcia">
+                <div class="team-member" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./images/financial officer.jpg" alt="David Garcia">
                     <h2>David Garcia - Chief Financial Officer</h2>
                     <p>David Garcia serves as the Chief Financial Officer, overseeing the financial health and sustainability of GalacticVoyager.With a strong background in finance and strategic planning,David ensures that our operations are financially sound and poised for growth.His expertise in financial management helps us invest in cutting-edge technology and expand our offerings to new destinations.</p>
                 </div>
@@ -138,8 +131,8 @@
         <div class="footer-content">
             <div class="footer-section">        
                 <a href="./about01.html">About Us</a>
-                <a href="#">FAQ</a>
-                <a href="#">Support</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./support.html">Support</a>
                 <a href="./contactus.html">Contact</a>
             </div>
             <div class="footer-section">
@@ -161,5 +154,12 @@
             <a href="./privacy policy.html">Privacy Policy</a> | <a href="./Terms of use.html">Terms Of Use</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
+</body>
         
             

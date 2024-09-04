@@ -17,6 +17,7 @@
         </video>
         <div class="overlay">
             <div class="navbar">
+            <img src="./images/logo.png" alt="">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="./Book a Flight.php">Book a flight</a></li>
@@ -87,8 +88,8 @@
         <div class="footer-section">
             
             <a href="./about01.html">About Us</a>
-            <a href="#">FAQ</a>
-            <a href="#">Support</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./support.html">Support</a>
             <a href="./contactus.html">Contact</a>
         </div>
         <div class="footer-section">

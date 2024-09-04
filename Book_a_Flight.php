@@ -15,6 +15,7 @@
         </video>
         <div class="overlay">
             <div class="navbar">
+            <img src="./images/logo.png" alt="">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="./Book_a_Flight.php">Book a flight</a></li>
@@ -55,7 +56,7 @@
                 
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()) {
-                                    echo "<option value='".$row['id']."'>".$row['flight_name']." (Available Seats: ".$row['available_seats'].")</option>";
+                                    echo "<option value='".$row['id']."'>".$row['flight_nams']." (Available Seats: ".$row['available_seats'].")</option>";
                                 }
                             } else {
                                 echo "<option>No flights available</option>";
@@ -156,8 +157,8 @@
         <div class="footer-content">
             <div class="footer-section">        
                 <a href="./about01.html">About Us</a>
-                <a href="#">FAQ</a>
-                <a href="#">Support</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./support.html">Support</a>
                 <a href="./contactus.html">Contact</a>
             </div>
             <div class="footer-section">
@@ -176,7 +177,7 @@
         <div class="footer-bottom">
             &copy; 2007 - 2024 ASTRAL FLIGHTS, ALL RIGHTS RESERVED
             <br>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a>
+            <a href="./privacy policy.html">Privacy Policy</a> | <a href="./Terms of use.html">Terms Of Use</a>
         </div>
     </footer>
     
