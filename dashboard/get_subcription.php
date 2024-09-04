@@ -73,7 +73,7 @@ $result = $conn->query($sql);
                 <li>
                     <a href="./get_subcription.php">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                        <img src="./imges/sub_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">subscription</span>
                     </a>
