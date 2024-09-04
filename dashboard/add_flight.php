@@ -18,7 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO flights (flight_name,flight_date,destination, available_seats) VALUES ('$flight_name','$flight_date','$destination', $available_seats )";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New flight added successfully";
+        echo"<script>" ;
+        echo "alert('Flight Add Sucessfully')";
+        echo "</script>" ;
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -54,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                        <img src="./imges/4.png" style="width: 60px;" alt="">
                         </span>
                         <span class="title">Astral Flights</span>
                     </a>
@@ -80,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li>
                     <a href="./add_flight.php">
                         <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
+                        <img src="./imges/flight_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">Flight Add</span>
                     </a>
@@ -88,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li>
                     <a href="./get_subcription.php">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                            <img src="./imges/sub_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">subscription</span>
                     </a>
@@ -96,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li>
                     <a href="./avalebelSeat.php">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                            <img src="./imges/flight_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">Available Flight</span>
                     </a>
@@ -112,12 +114,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
 
                 <div class="user">
                     

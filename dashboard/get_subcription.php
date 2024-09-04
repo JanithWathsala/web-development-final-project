@@ -39,7 +39,7 @@ $result = $conn->query($sql);
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                        <img src="./imges/4.png" style="width: 60px;" alt="">
                         </span>
                         <span class="title">Astral Flights</span>
                     </a>
@@ -65,7 +65,7 @@ $result = $conn->query($sql);
                 <li>
                     <a href="./add_flight.php">
                         <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
+                        <img src="./imges/flight_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">Flight Add</span>
                     </a>
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
                 <li>
                     <a href="./avalebelSeat.php">
                         <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
+                        <img src="./imges/flight_icon.jpg" style="width: 40px;" alt="">
                         </span>
                         <span class="title">Available Flight</span>
                     </a>
@@ -97,12 +97,7 @@ $result = $conn->query($sql);
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
+                
 
                 <div class="user">
                     

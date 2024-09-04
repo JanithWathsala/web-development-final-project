@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .confirmation-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .confirmation-container h1 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .confirmation-container p {
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+        .confirmation-container .checkmark {
+            font-size: 50px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .confirmation-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="checkmark">&#10004;</div>
+        <h1>Your Subscription to Astral FLIGHT Has Been Confirmed!</h1>
+        <p>Thank you for subscribing! Look out for news and updates from Astral FLIGHT.</p>
+        <button onclick="window.location.href='http://localhost:3000/homepage.html'">Continue to Website</button>
+    </div>
+</body>
+</html>

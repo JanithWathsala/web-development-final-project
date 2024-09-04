@@ -46,15 +46,22 @@ if ($check_seats_result->num_rows > 0) {
             $update_seats_sql = "UPDATE flights SET available_seats = available_seats - $seats_to_book WHERE id = $flight_id";
             $conn->query($update_seats_sql);
 
-            echo "Booking submitted successfully";
+            echo"<script>" ;
+            echo "window.location = 'Booking_successfully.html';";
+            echo "</script>" ;
+
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     } else {
-        echo "Error: Not enough available seats for this booking.";
+        echo"<script>" ;
+        echo "alert('Error: Not enough available seats for this booking.');";
+        echo "</script>" ;
     }
 } else {
-    echo "Error: Flight not found.";
+    echo"<script>" ;
+    echo "alert('Error: Flight not found.');";
+    echo "</script>" ;
 }
 
 $conn->close();

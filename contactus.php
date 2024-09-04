@@ -16,9 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO contact_messages (name, email, phone, company_name, message) VALUES ('$name', '$email', '$phone', '$coname', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "";
-    } else {
-        echo "Error: " . $conn->error;
+       echo"<script>" ;
+       echo "window.location = 'contact_sucessful.html';";
+       echo "</script>" ;
+    } 
+    else {
+       echo"<script>" ;
+       echo "alert('Error');";
+       echo "window.location = 'contact_sucessful.html';";
+       echo "</script>" ;
     }
 
     $conn->close();
